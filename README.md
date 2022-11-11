@@ -1,6 +1,14 @@
 # Ínicio
 Para iniciar o projeto, rode os seguintes comandos:
 
+Primeiro instale as dependencias:
+```shell
+npm install
+# ou
+yarn install
+```
+
+Inicie o servidor de desenvolvimento
 ```shell
 npm run dev
 # ou
