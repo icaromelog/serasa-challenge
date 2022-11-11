@@ -1,0 +1,38 @@
+// Breakpoints 
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  large: 1200px
+);
+
+@mixin breakpoint($size) {
+    @if not map-has-key($breakpoints, $size) {
+      @warn "`#{$size}`.";
+    }
+    @else {
+      @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+      }
+    }
+}
+
+// Mixins 
+@function remCalc($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+// Colors 
+$dark-low: rgba(0,0,0,0.44);
+$dark-medium: rgba(0,0,0,0.60);
+$dark-high: rgba(0,0,0,0.80);
+$magenta: #E63888;
+$light-solid: #FFF;
+$light-medium: #f5f7f9;
+$light-high: rgba(255,255,255,.8);
+$silver-medium: #E8EBEE;
+
+
+
+
+

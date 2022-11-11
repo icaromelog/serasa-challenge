@@ -1,0 +1,39 @@
+.button {
+    margin: remCalc(15px) 0;
+
+    &-solid {
+        cursor: pointer;
+        border: none;
+        border-radius: remCalc(8px);
+        @include font-primary(16px, 700, 22px);
+        padding: remCalc(10px);
+        transition: all 0.25s ease-in-out;
+    }
+
+    &-size {
+        &-fluid {
+            width: 100%;
+            min-height: remCalc(55px);
+        }
+    }
+
+    &.primary {
+        color: $light-solid;
+        background: $magenta;
+
+        &:hover {
+            border-color: rgba($magenta, 0.15);
+            box-shadow: 0 0 0 4px rgba($magenta, 0.15);
+        }
+    }
+
+    &:disabled {
+        cursor: default;
+        background-color: rgba($dark-low, 0.15);
+        color: $dark-low;
+
+        &:hover {
+            box-shadow: none!important;
+        }
+    }
+}

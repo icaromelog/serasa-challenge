@@ -1,0 +1,17 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Imports 
+@import "variables";
+
+// Mixins
+@mixin font-primary($size, $weight:400, $line:normal, $spacing:normal) {
+  font-family: 'Roboto', sans-serif;
+  font-size: remCalc($size);
+  font-weight: $weight;
+  letter-spacing: $spacing;
+  line-height: $line,
+}
+
+
+

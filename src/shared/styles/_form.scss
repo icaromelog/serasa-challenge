@@ -1,0 +1,48 @@
+.form {
+    &-content {
+        width: 100%;
+    }
+
+    &-group {
+        margin: remCalc(15px) 0;
+
+        label {
+            color: $dark-high;
+            font-weight: 700;
+            display: table;
+            margin: remCalc(10px) 0;
+        }
+
+        input {
+            width: 100%;
+            border-radius: remCalc(8px);
+            border: 1px solid #E8EBEE;
+            padding: remCalc(15px);
+            @include font-primary(15px, 500, -1.2px);
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+                border-color: $magenta;
+            }
+
+            &:focus {
+                border-color: $magenta;
+            }
+
+            &:focus-visible {
+                box-shadow: 0 0 0 4px rgba($magenta, 0.15);
+                outline: 0;
+            }
+        }
+    }
+    
+    &-input-error {
+        @include font-primary(14px, 600);
+        color: #d6103b;
+    }
+
+    &-rating-wrap {
+        display: table;
+        margin: 0 auto;
+    }
+}

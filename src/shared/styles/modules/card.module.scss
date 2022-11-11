@@ -1,0 +1,26 @@
+@import "../variables";
+
+.card {
+    width: auto;
+    background-color: $light-solid;
+    border: 1px solid $light-high;
+    box-shadow: 0 4px 9px 0 rgb(0 0 0 / 6%);
+    border-radius: remCalc(8px);
+    padding: remCalc(40px);
+
+    &.fluid {
+        max-width: 100%;
+    }
+
+    &.small {
+        width: remCalc(480px);
+    }
+
+    &.medium {
+        width: remCalc(768px);
+    }
+
+    &.large {
+        width: remCalc(920px);
+    }
+}   
