@@ -16,8 +16,8 @@ next dev
 ```
 Acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicação.
 
-# Components 
-Os componentes estão dentro de ./src/components, examplo abaixo de utilização:
+# Componentes
+Os componentes estão dentro de ./src/components, exemplo de utilização:
 
 ```js
 import Card from './components/Card/Card'
